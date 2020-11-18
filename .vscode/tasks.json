@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "C build for tansan",
+            "label": "C build for clang",
             "type": "shell",
-            "command": "tansan",
+            "command": "clang",
             "args": [
                 "-g",
                 "${file}",
@@ -26,9 +26,9 @@
             "problemMatcher": []
         },
         {
-            "label": "C++ build for tansan++",
+            "label": "C++ build for clang++",
             "type": "shell",
-            "command": "tansan++",
+            "command": "clang++",
             "args": [
                 "-g",
                 "${file}",
@@ -47,6 +47,14 @@
             },
             "problemMatcher": []
         },
-        
+        {
+            "label": "excute",
+            "type": "shell",
+            "command": "${fileDirname}/${fileBasenameNoExtension}",
+            "group": "test",
+            "presentation": {
+                "clear": true
+            }
+        }
     ]
 }
