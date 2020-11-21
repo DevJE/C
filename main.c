@@ -1,8 +1,11 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-int main(void) 
-{
-    printf("Be happy!");
-
+int main() {
+    printf("hello!!!");
+    system("pause");
+    
     return 0;
 }
+
+
