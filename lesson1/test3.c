@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
     int a;
@@ -43,8 +44,19 @@ int main() {
     aa = -1;
     printf("%u\n", aa);
 
-    float ft = 1.23457890123456789;
-    double db = 1.23457890123456789;
+    float ft = 1.234567890123456789;
+    double db = 1.234567890123456789;
+
+   // printf("ft : %.20f\n", ft);
+   // printf("db : %.20lf\n", db);
+
+    char fruit[6] = "apple";
+   // printf("%s\n", fruit);
+   // printf("%s, %s\n", fruit, "jam");
+
+    //strcpy
+    strcpy(fruit, "banana");
+    printf("%s\n", fruit);
 
     return 0;
 }
