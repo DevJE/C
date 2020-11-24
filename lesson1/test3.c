@@ -47,14 +47,15 @@ int main() {
     float ft = 1.234567890123456789;
     double db = 1.234567890123456789;
 
-   // printf("ft : %.20f\n", ft);
-   // printf("db : %.20lf\n", db);
+    printf("ft : %.20f\n", ft);
+    printf("db : %.20lf\n", db);
 
-    char fruit[6] = "apple";
-   // printf("%s\n", fruit);
-   // printf("%s, %s\n", fruit, "jam");
+    char fruit[7] = "apple";
+    printf("%s\n", fruit);
+    printf("%s, %s\n", fruit, "jam");
 
     //strcpy
+    printf("%s\n", fruit);
     strcpy(fruit, "banana");
     printf("%s\n", fruit);
 
